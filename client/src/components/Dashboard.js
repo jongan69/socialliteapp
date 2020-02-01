@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+
 import PropTypes from 'prop-types';
 
+import { auth } from '../firebase';
 import buttonList from '../initialButtonList';
 import Layout from '../containers/Layout';
-import SocialButtonList from './SocialButtonList';
-import SocialProfileList from './SocialProfileList';
-import { auth } from '../firebase';
 
 import './Dashboard.css';
+import SocialButtonList from './SocialButtonList';
+import SocialProfileList from './SocialProfileList';
 
 class Dashboard extends Component {
   static propTypes = {
@@ -75,7 +76,7 @@ class Dashboard extends Component {
   render() {
     return (
       <Layout>
-        <h1>Secure Area</h1>
+        <h1>You are logged in!</h1>
         <SocialProfileList
           auth={auth.getAuth}
           providerData={this.state.providerData}
@@ -94,6 +95,9 @@ class Dashboard extends Component {
           onClick={() => auth.getAuth().signOut()}
         >
           Logout
+        </button>
+        <button>
+        Run Personality Test
         </button>
       </Layout>
     );

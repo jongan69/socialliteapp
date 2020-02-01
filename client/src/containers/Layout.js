@@ -2,6 +2,8 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
+import Navbar from '../components/Navbar';
+
 import './Layout.css';
 
 const propTypes = {
@@ -17,6 +19,7 @@ const Layout = ({ children, contentCenter }) => {
   return (
     <section>
       <header>
+      <Navbar/>
         <h1>Social Lite</h1>
       </header>
       <main className={contentCenter ? 'content-center' : ''}>{children}</main>

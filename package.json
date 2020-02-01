@@ -14,6 +14,7 @@
     "heroku-postbuild": "cd client && yarn build && cd .. && yarn server"
   },
   "dependencies": {
+    "core-js": "3",
     "express": "^4.16.4",
     "react": "^16.12.0",
     "react-scripts": "^3.3.1"

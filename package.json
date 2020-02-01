@@ -9,7 +9,8 @@
   "scripts": {
     "dev:client": "cd client && yarn start",
     "dev:server": "cd client && yarn build && cd .. && yarn start",
-    "start": "node server.js",
+    "start": "cd client && yarn build && cd .. && yarn start",
+    "server": "node server.js",
     "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "dependencies": {

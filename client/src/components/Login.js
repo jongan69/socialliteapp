@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+
 import { Link } from 'react-router-dom';
 
+import { auth } from '../firebase';
 import buttonList from '../initialButtonList';
 import Layout from '../containers/Layout';
+
 import SocialButtonList from './SocialButtonList';
-import { auth } from '../firebase';
 
 class Login extends Component {
   /**

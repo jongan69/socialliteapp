@@ -1,6 +1,6 @@
 <h1>
   Social Lite
-
+<h1>
  
   A web app focused on helping introverts (change this. Not all introverts want to become extroverts) socialyze/ go out by offering rewards for attending events that are recommended to them through AI.
   

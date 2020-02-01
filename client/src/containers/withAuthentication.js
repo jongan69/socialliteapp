@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import Delay from 'react-delay';
 
 import { auth } from '../firebase';
@@ -31,7 +32,7 @@ export default WrappedComponent => {
           providerData={this.state.providerData}
         />
       ) : (
-        <Delay wait={250}>
+        <Delay wait={150}>
           <p>Loading...</p>
         </Delay>
       );

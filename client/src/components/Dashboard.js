@@ -15,9 +15,9 @@ class Dashboard extends Component {
     providerData: PropTypes.arrayOf(PropTypes.object).isRequired
   };
 
-  // static defaultProps = {
-  //   providerData: []
-  // };
+  static defaultProps = {
+    providerData: []
+  };
 
   state = {
     buttonList: buttonList,

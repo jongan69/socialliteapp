@@ -5,15 +5,13 @@ import Layout from '../containers/Layout';
 const About = () => {
   return (
     <Layout>
-      <h2>About</h2>
+      <h2>About us</h2>
       <p>
-        Bacon ipsum dolor amet tail landjaeger corned beef chuck hamburger,
-        salami strip steak. Pancetta kielbasa ham hock andouille. Tail cupim
-        burgdoggen salami bacon jerky shankle strip steak turkey. Drumstick
-        shoulder pork loin, filet mignon cupim alcatra tongue jowl. Cupim
-        tenderloin rump t-bone. Picanha turducken short loin jowl, landjaeger
-        shoulder t-bone buffalo spare ribs salami pastrami tri-tip ground round
-        alcatra.
+        Social Lite is an app that assists people in taking steps to improving thier social skills.
+      </p>
+      <p>
+        Students from Florida Poly teamed up to travel to Gainsville, FL to compete in SwampHacks VI.  
+
       </p>
     </Layout>
   );

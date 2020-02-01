@@ -1,4 +1,5 @@
 import React from 'react';
+// import MuiAppBar from '@material-ui/core/AppBar';
 
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
@@ -20,8 +21,10 @@ export default class NavBar extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="faded" light>
-          <NavbarBrand href="/" className="mr-auto">Social Lite</NavbarBrand>
+        <Navbar className="top-bar" color="faded" light>
+          <div><img class="logo" src="images/SL.svg" alt="logo"></img></div>
+        
+          <NavbarBrand href="/" className="mr-auto">SOCIAL LITE</NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
           <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav navbar>

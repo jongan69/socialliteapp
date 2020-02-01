@@ -20,6 +20,8 @@ const Layout = ({ children, contentCenter }) => {
     <section>
       <header>
       <Navbar/>
+      
+      {/* LOGIN TITLEBAR */}
         <h1>Social Lite</h1>
       </header>
       <main className={contentCenter ? 'content-center' : ''}>{children}</main>

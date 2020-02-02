@@ -25,13 +25,11 @@ button:hover {
 }
 
 .mr-auto {
-    
-    
     color: white !important;
-    font-size: xx-large;
+    font-size: xxx-large;
     font-family: 'Gill Sans MT';
     text-align: center;
-    padding: 10px;
+    padding: inherit;
 }
 
 .top-bar {

@@ -2,6 +2,8 @@ import React from 'react';
 // import MuiAppBar from '@material-ui/core/AppBar';
 
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import './Navbar.css'
+import logo from '../images/SocialLiteLogo.png'
 
 export default class NavBar extends React.Component {
   constructor(props) {
@@ -22,11 +24,12 @@ export default class NavBar extends React.Component {
     return (
       <div>
         <Navbar className="top-bar" color="faded" light>
-          <div><img class="logo" src="images/SL.svg" alt="logo"></img></div>
+          <img class="logo" src={logo} alt="logo" />
         
-          <NavbarBrand href="/" className="mr-auto">SOCIAL LITE</NavbarBrand>
+          <NavbarBrand href="/" className="mr-auto">SOCIAL  LITE</NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-          <Collapse isOpen={!this.state.collapsed} navbar>
+        </Navbar>
+        <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav navbar>
               <NavItem>
                 <NavLink href="/">Home</NavLink>
@@ -39,7 +42,6 @@ export default class NavBar extends React.Component {
               </NavItem>
             </Nav>
           </Collapse>
-        </Navbar>
       </div>
     );
   }
